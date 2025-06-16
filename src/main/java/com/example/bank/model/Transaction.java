@@ -3,10 +3,8 @@ package com.example.bank.model;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.UUID;
 
 @Data
 public class Transaction {

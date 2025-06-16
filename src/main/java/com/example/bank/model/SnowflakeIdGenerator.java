@@ -85,13 +85,4 @@ public class SnowflakeIdGenerator {
         }
         return timestamp;
     }
-
-    // 测试
-    public static void main(String[] args) {
-        SnowflakeIdGenerator idGenerator = new SnowflakeIdGenerator(1, 1);
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println(idGenerator.nextId());
-        }
-    }
 }

@@ -2,7 +2,7 @@ package com.example.bank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;  // 启用缓存（可选）
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
 @EnableCaching

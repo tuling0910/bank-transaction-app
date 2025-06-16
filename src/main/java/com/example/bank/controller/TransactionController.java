@@ -3,13 +3,9 @@ package com.example.bank.controller;
 import com.example.bank.model.PageResponse;
 import com.example.bank.model.Transaction;
 import com.example.bank.service.TransactionService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Controller
 public class TransactionController {
@@ -19,13 +15,6 @@ public class TransactionController {
         this.transactionService = transactionService;
     }
 
-
-//    @GetMapping("/")
-//    public String index(Model model) {
-//        List<Transaction> transactions = transactionService.listAllTransactions();
-//        model.addAttribute("transactions", transactions);
-//        return "index"; // 对应 resources/templates/index.html
-//    }
 
     // 2. 跳转新增交易页
     @GetMapping("/create")
